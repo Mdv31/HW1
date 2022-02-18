@@ -12,7 +12,7 @@ public class Application {
         Barsik.setVoice("Мяу-мяу!");
         Barsik.setWeight(200);
 
-        Kotik Murka = new Kotik("Мурка", "Мяу-мяу!", 100, -5);
+        Kotik Murka = new Kotik("Мурка", "Мяу-мяу!", 3, 15);
 
         Murka.liveAnotherDay();
 

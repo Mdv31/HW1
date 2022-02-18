@@ -6,7 +6,8 @@ public class Kotik {
     private int weight;
     private String name;
     private String voice;
-    private int satiety=(int) (Math.random() * 10) + 1;
+    //private int satiety=(int) (Math.random() * 10) + 1;
+    private int satiety;
     private String[] arrayLiveDay;
 
 
@@ -14,7 +15,7 @@ public class Kotik {
         ++count;
     }
 
-    public Kotik(String name, String voice, int weight , int satiety) {
+    public Kotik(String name, String voice, int satiety, int weight) {
         ++count;
         this.weight = weight;
         this.name = name;
