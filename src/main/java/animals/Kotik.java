@@ -2,7 +2,7 @@ package animals;
 
 public class Kotik {
     private static final int METHODS = 5;
-    private static int COUNT = 0;
+    private static int count = 0;
     private int weight;
     private String name;
     private String voice;
@@ -11,18 +11,19 @@ public class Kotik {
 
 
     public Kotik() {
-        ++COUNT;
+        ++count;
     }
 
     public Kotik(String name, String voice, int weight , int satiety) {
-        ++COUNT;
+        ++count;
         this.weight = weight;
         this.name = name;
         this.voice = voice;
+        this.satiety=satiety;
     }
 
     public static int getCOUNT() {
-        return COUNT;
+        return count;
     }
 
 
@@ -145,6 +146,9 @@ public class Kotik {
 
     public String getArrayLiveDay(int hour) {
         return arrayLiveDay[hour];
+    }
+    public int getSatiety () {
+        return satiety;
     }
 }
 
