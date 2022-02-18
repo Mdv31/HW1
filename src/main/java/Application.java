@@ -12,7 +12,7 @@ public class Application {
         Barsik.setVoice("Мяу-мяу!");
         Barsik.setWeight(200);
 
-        Kotik Murka = new Kotik("Мурка", "Мяу-мяу!", 100);
+        Kotik Murka = new Kotik("Мурка", "Мяу-мяу!", 100, 50);
 
         Murka.liveAnotherDay();
 
@@ -27,15 +27,16 @@ public class Application {
         System.out.println(Murka.getWeight());
 
         //сравнение голосов котиков
-        System.out.println("\nСравнение голосов котиков:");
-        if (Barsik.getVoice().equals(Murka.getVoice())) {
-            System.out.println("Голоса одинаоквы");
-        } else System.out.println("Голоса разные");
-
+        compareVoid(Murka,Barsik);
         //кол-во созданых котиков
         System.out.println("\nКотиков создано : " + Kotik.getCOUNT());
 
 
     }
-
+    static void compareVoid(Kotik a, Kotik b){
+        System.out.println("\nСравнение голосов котиков:");
+        if (a.getVoice().equals(b.getVoice())) {
+            System.out.println("Голоса одинаоквы");
+        } else System.out.println("Голоса разные");
+    }
 }
