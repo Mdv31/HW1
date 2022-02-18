@@ -27,13 +27,13 @@ public class Application {
         System.out.println(Murka.getWeight());
 
         //сравнение голосов котиков
-        compareVoid(Murka,Barsik);
+        compareVoice(Murka,Barsik);
         //кол-во созданых котиков
         System.out.println("\nКотиков создано : " + Kotik.getCOUNT());
 
 
     }
-    static void compareVoid(Kotik a, Kotik b){
+    static void compareVoice(Kotik a, Kotik b){
         System.out.println("\nСравнение голосов котиков:");
         if (a.getVoice().equals(b.getVoice())) {
             System.out.println("Голоса одинаоквы");
