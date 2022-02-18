@@ -29,7 +29,7 @@ public class Kotik {
 
 
     boolean play () {
-        if (this.satiety_test(this.satiety)) {
+        if (getSatiety(this.satiety)) {
             System.out.println("Cat is play! ^_^");
             return true;
         } else return false;
@@ -148,9 +148,10 @@ public class Kotik {
     public String getArrayLiveDay(int hour) {
         return arrayLiveDay[hour];
     }
-    public int getSatiety () {
-        return satiety;
+    public boolean getSatiety (int k) {
+        if (k > 0) {
+            return true;
+        } else return false;
     }
-
 }
 
