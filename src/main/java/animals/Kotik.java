@@ -30,6 +30,7 @@ public class Kotik {
 
     boolean play () {
         if (getSatiety()>0) {
+            this.satiety--;
             System.out.println("Cat is play! ^_^");
             return true;
         } else return false;
