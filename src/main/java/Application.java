@@ -12,7 +12,7 @@ public class Application {
         Barsik.setVoice("Мяу-мяу!");
         Barsik.setWeight(200);
 
-        Kotik Murka = new Kotik("Мурка", "Мяу-мяу!", 100, 50);
+        Kotik Murka = new Kotik("Мурка", "Мяу-мяу!", 100, 5);
 
         Murka.liveAnotherDay();
 
@@ -29,7 +29,7 @@ public class Application {
         //сравнение голосов котиков
         compareVoice(Murka, Barsik);
         //кол-во созданых котиков
-        System.out.println("\nКотиков создано : " + Kotik.getCOUNT());
+        System.out.println("\nКотиков создано : " + Kotik.getCount());
 
 
     }

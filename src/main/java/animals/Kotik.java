@@ -22,7 +22,7 @@ public class Kotik {
         this.satiety=satiety;
     }
 
-    public static int getCOUNT() {
+    public static int getCount() {
         return count;
     }
 
@@ -85,7 +85,7 @@ public class Kotik {
         eat(5, "kolbasa");
     }
 
-    public String liveAnotherDay() {
+    public String[] liveAnotherDay() {
         String[] arrayLiveDay = new String[24];
         this.arrayLiveDay=arrayLiveDay;
         for (int hour = 0; hour <= 23; hour++) {
@@ -118,7 +118,7 @@ public class Kotik {
                 }
             }
         }
-        return "День записан";
+        return this.arrayLiveDay;
     }
     public String getName () {
         return name;
@@ -150,5 +150,6 @@ public class Kotik {
     public int getSatiety () {
         return satiety;
     }
+
 }
 
