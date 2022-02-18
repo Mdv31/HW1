@@ -33,10 +33,12 @@ public class Application {
 
 
     }
-    static void compareVoice(Kotik a, Kotik b){
+    static boolean compareVoice(Kotik a, Kotik b){
         System.out.println("\nСравнение голосов котиков:");
         if (a.getVoice().equals(b.getVoice())) {
             System.out.println("Голоса одинаоквы");
-        } else System.out.println("Голоса разные");
+            return true;
+        } else {System.out.println("Голоса разные");
+        return false;}
     }
 }
