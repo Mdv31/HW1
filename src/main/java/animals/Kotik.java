@@ -74,7 +74,7 @@ public class Kotik {
     }
 
     void eat ( int satiety){
-        this.satiety = +satiety;
+        this.satiety += satiety;
     }
 
     void eat ( int satiety, String food){
